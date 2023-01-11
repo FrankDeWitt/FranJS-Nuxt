@@ -13,7 +13,7 @@
         class="card article"
       >
         <NuxtLink :to="blogPost._path">
-          <div class="overflow-hidden sm:rounded-xl ring-1 ring-gray-200 dark:ring-0 hover:ring-0 shadow-none dark:bg-gray-900/50 bg-white hover:dark:bg-gray-900 h-full w-ful flex flex-col items-center gap-x-8  rounded-xl md:flex-row">
+          <div class="overflow-hidden sm:rounded-xl ring-gray-200 ring-0 hover:ring-0 shadow-none bg-gray-900/50 hover:bg-gray-900 h-full w-ful flex flex-col items-center gap-x-8  rounded-xl md:flex-row">
             <div class="shrink-0">
               <NuxtImg :src="blogPost.pic" alt="" class="w-[300px] h-full object-cover" />
             </div>
