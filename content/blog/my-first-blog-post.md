@@ -1,38 +1,30 @@
 ---
-title: "My First Blog Post"
-description: Soy un desarrollador frontend con experiencia en Vue y en la creación de aplicaciones web interactivas. En mi blog, compartiré mis proyectos, mis habilidades y mi proceso de trabajo para ofrecer una excelente experiencia de usuario. ¡Espero que te unas y aprendas juntos!
-pic: "https://miro.medium.com/max/1000/1*qJppTMduXXhjgU2tZt9SfQ.png"
+title: "Welcome to my blogg"
+description: I'm a frontend developer with experience in Vue and building interactive web applications. In my blog, I will share my projects, my skills and my work process to deliver an excellent user experience, I hope you will join me and learn together!
+pic: "/img/avatar.png"
 author: "@Fran_J9"
 dates:
   published: "2023-01-10"
 ---
 
-# Sample Markdown
+![my image](/img/avatar.png){ width="300" height="600" style="display: block; margin: 0 auto" }
+# My name is Fran 
 
-This is some basic, sample markdown.
 
-## Second Heading
+And I'm a front-end developer. I specialize in web application development and I'm always looking for new ways to improve my skills and create awesome websites.
 
-- Unordered lists, and:
-  1. One
-  2. Two
-  3. Three
-- And more
 
-> Blockquote
+Currently, I'm working with Vue and Nuxt. I love working with these technologies because they are easy to learn and have a great community behind them. I use Vue to build the user interface and Nuxt to handle server configuration and SEO.
 
-And **bold**, _italics_.
 
-[A link](https://markdowntohtml.com)
+Working on this project has been a great opportunity to practice my skills and learn new tools and techniques. It has also allowed me to share my knowledge and experience with other developers and get valuable feedback.
 
-And code highlighting:
+As I continue to work on this project, I am also looking for new opportunities to collaborate with other developers and projects. I am always open to new challenges and learning opportunities.
 
-```js
-var foo = 'bar';
+If you are interested in working together or just want to chat about web development, feel free to contact me - I'm always willing to connect with other developers!
 
-function baz(s) {
-   return foo + ':' + s;
-}
-```
+Best regards 
 
-The end ...
+##### Fran JS.
+
+

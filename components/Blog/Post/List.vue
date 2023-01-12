@@ -13,13 +13,12 @@
         class="card article"
       >
         <NuxtLink :to="blogPost._path">
-          <div class="overflow-hidden sm:rounded-xl ring-gray-200 ring-0 hover:ring-0 shadow-none bg-gray-900/50 hover:bg-gray-900 h-full w-ful flex flex-col items-center gap-x-8  rounded-xl md:flex-row">
-            <div class="shrink-0">
-              <NuxtImg :src="blogPost.pic" alt="" class="w-[300px] h-full object-cover" />
-            </div>
-            <div class="p-2">
+          <div class="flex justify-center group-hover:cursor-pointer group">
+            <div class="flex flex-col lg:flex-row rounded-lg bg-zinc-800/50 shadow-lg group-hover:bg-zinc-800">
+              <NuxtImg :src="blogPost.pic" alt="" class="w-full h-96 lg:h-auto object-cover lg:w-[200px] rounded-t-lg lg:rounded-none lg:rounded-l-lg" />
+              <div class="p-2">
               <div class="flex flex-col gap-y-2">
-                <div class="hover:text-cyan-400">
+                <div class="group-hover:text-green-400">
                   <div class="text-xl font-semibold">{{ blogPost.title }}</div>
                 </div>
                 <div class="flex gap-2">
@@ -29,7 +28,8 @@
                   />
                 </div>
               </div>
-              <p class="mt-3 text-gray-400">{{ blogPost.description }}</p>
+              <p class="mt-3 text-gray-400"> {{ blogPost.description }}</p>
+            </div>
             </div>
           </div>
         </NuxtLink>

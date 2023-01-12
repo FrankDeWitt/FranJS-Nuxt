@@ -13,40 +13,33 @@
 
 </script>
 <template>
-  <div>
-    <li class="rounded-md relative group">
-      <div class="overflow-hidden sm:rounded-xl ring-gray-200 ring-0 hover:ring-0 shadow-none bg-gray-900/50 hover:bg-gray-900 h-full w-ful flex flex-col items-center gap-x-8  rounded-xl md:flex-row">
-        <div class="shrink-0">
-          <div 
-              class="hover:text-cyan-400"
-              @click="navigateTo(`/project/${project?.slug}-${project?.id}`)"  
-            >
-              <NuxtImg :src="project?.logo" alt="" class="w-[300px] h-full object-cover" />
-          </div>
-        </div>
+  <li class="group">
+    <div 
+      class="flex justify-center group-hover:cursor-pointer"
+      @click="navigateTo(`/project/${project?.slug}-${project?.id}`)"  
+    >
+      <div class="flex flex-col lg:flex-row rounded-lg bg-zinc-800/50 shadow-lg group-hover:bg-zinc-800">
+        <NuxtImg :src="project?.logo" alt="" class="w-full h-96 lg:h-auto object-cover lg:w-[300px] rounded-t-lg lg:rounded-none lg:rounded-l-lg" />
         <div class="p-2">
-          <div class="flex flex-col gap-y-2">
+        <div class="flex flex-col gap-y-2">
+          <div class="group-hover:text-green-400">
+            <div class="text-xl font-semibold">Project {{ project?.id }} - {{ project?.title }}</div>
+          </div>
+          <div class="flex gap-2">
             <div 
-              class="hover:text-cyan-400"
-              @click="navigateTo(`/project/${project?.slug}-${project?.id}`)"  
+              v-for="tag in project?.tags" :key="tag"
+              :class="[
+                'rounded-md px-2 py-1 text-xs font-semibold',
+                tagColors[tag]
+              ]"
             >
-              <div class="text-xl font-semibold">Project {{ project?.id }} - {{ project?.title }}</div>
-            </div>
-            <div class="flex gap-2">
-              <div 
-                v-for="tag in project?.tags" :key="tag"
-                :class="[
-                  'rounded-md px-2 py-1 text-xs font-semibold',
-                  tagColors[tag]
-                ]"
-              >
-                {{ tag }}
-              </div>
+              {{ tag }}
             </div>
           </div>
-          <p class="mt-3 text-gray-400"> {{ project?.body }}</p>
         </div>
+        <p class="mt-3 text-gray-400"> {{ project?.body }}</p>
       </div>
-    </li>
-  </div>
+      </div>
+    </div>
+  </li>
 </template>
