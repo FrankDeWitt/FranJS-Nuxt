@@ -9,7 +9,15 @@ export default defineNuxtConfig({
         // <meta name="description" content="My amazing portfolio">
         { name: 'description', content: 'My amazing portfolio.' }
       ],
-    }
+    },
+    // pageTransition: {
+    //   name: 'fade',
+    //   mode: 'out-in' // default
+    // },
+    // layoutTransition: {
+    //   name: 'slide',
+    //   mode: 'out-in' // default
+    // }
   },
   modules: [
     '@nuxtjs/tailwindcss',
@@ -21,6 +29,10 @@ export default defineNuxtConfig({
   ],
   tailwindcss: {
     cssPath: '~/assets/css/tailwind.css',
+    configPath: 'tailwind.config.js',
+    exposeConfig: false,
+    injectPosition: 0,
+    viewer: true,
   },
   content: {
     // https://content.nuxtjs.org/api/configuration
@@ -32,5 +44,5 @@ export default defineNuxtConfig({
         default: 'github-light'
       }
     }
-  }
+  },
 })

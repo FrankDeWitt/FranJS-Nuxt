@@ -1,13 +1,13 @@
 <script setup lang="ts">
-  const route = useRoute()
 
-  const { projects } = useProjects()
+  const projects = useProject();
+  const route = useRoute();
   
-  const project = computed(() => {
-    return projects.find((c) => {
-      return c.id === parseInt(route.params.id)
-    })
-  })
+  const project = computed(() => { 
+    return projects.find(
+      (project) => project.id === parseInt(route.params.id)
+    );
+  });
 
   if(!project.value) { 
     throw createError({

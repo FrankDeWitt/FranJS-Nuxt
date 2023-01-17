@@ -1,5 +1,5 @@
 ---
-title: "Welcome to my blogg"
+title: "Welcome to my blog"
 description: I'm a frontend developer with experience in Vue and building interactive web applications. In my blog, I will share my projects, my skills and my work process to deliver an excellent user experience, I hope you will join me and learn together!
 pic: "/img/avatar.png"
 author: "@Fran_J9"

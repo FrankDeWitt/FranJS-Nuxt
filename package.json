@@ -1,4 +1,9 @@
 {
+  "license": "MIT",
+  "author": {
+    "name": "Fran JS",
+    "email": "fran.j9.sc@gmail.com"
+  },
   "private": true,
   "scripts": {
     "build": "nuxt build",
