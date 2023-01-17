@@ -10,7 +10,7 @@
 <template>
   <div id="app">
     <Header class="fixed" />
-      <main class="app-main">
+      <main class="app-main min-h-screen">
         <NuxtLayout>
           <NuxtPage />
         </NuxtLayout>

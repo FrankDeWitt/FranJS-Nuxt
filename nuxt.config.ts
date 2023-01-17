@@ -10,23 +10,30 @@ export default defineNuxtConfig({
         { name: 'description', content: 'My amazing portfolio.' }
       ],
     },
-    // pageTransition: {
-    //   name: 'fade',
-    //   mode: 'out-in' // default
-    // },
-    // layoutTransition: {
-    //   name: 'slide',
-    //   mode: 'out-in' // default
-    // }
+    pageTransition: {
+      name: 'page',
+      mode: 'out-in' // default
+    },
+    layoutTransition: {
+      name: 'slide-right',
+      mode: 'out-in' // default
+    }
   },
   modules: [
     '@nuxtjs/tailwindcss',
+    '@nuxtjs/google-fonts',
     '@nuxt/image-edge',
     '@nuxt/content',
     '@vueuse/nuxt',
     'nuxt-icon',
     'nuxt-icons',
   ],
+  googleFonts: {
+    families: {
+      Roboto: true,
+      Mulish: true,
+    }
+  },
   tailwindcss: {
     cssPath: '~/assets/css/tailwind.css',
     configPath: 'tailwind.config.js',
@@ -35,10 +42,8 @@ export default defineNuxtConfig({
     viewer: true,
   },
   content: {
-    // https://content.nuxtjs.org/api/configuration
     documentDriven: true,
     highlight: {
-      // See the available themes on https://github.com/shikijs/shiki/blob/main/docs/themes.md#all-theme
       theme: {
         dark: 'github-dark',
         default: 'github-light'

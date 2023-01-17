@@ -3,7 +3,7 @@
 
 </script>
 <template>
-  <div class="mx-auto max-w-screen-lg px-3 py-6">
+  <div class="mx-auto max-w-screen-lg py-6">
     <div class="mb-6 text-2xl font-bold">Recent <span class="text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-teal-400">Projects</span>
     </div>
     <div class="flex flex-col gap-6">

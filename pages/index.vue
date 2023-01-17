@@ -1,4 +1,6 @@
 <template>
-  <MainHero/>
-  <MainProjects />
+  <div>
+    <MainHero/>
+    <MainProjects />
+  </div>
 </template>

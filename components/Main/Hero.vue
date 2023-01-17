@@ -1,5 +1,5 @@
 <template>
-  <div class="mx-auto max-w-screen-lg px-3 py-6">
+  <div class="mx-auto max-w-screen-lg py-6">
     <div class="flex flex-col items-center md:flex-row md:justify-between md:gap-x-24">
       <div>
         <h1 class="text-3xl font-bold text-white">

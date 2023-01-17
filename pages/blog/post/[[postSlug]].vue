@@ -5,5 +5,7 @@
 </script>
 
 <template>
-  <ContentDoc />
+  <div>
+    <ContentDoc />
+  </div>
 </template>

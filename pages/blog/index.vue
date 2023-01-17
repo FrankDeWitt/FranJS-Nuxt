@@ -4,5 +4,7 @@
   })
 </script>
 <template>
-  <BlogPostList />
+  <div>
+    <BlogPostList />
+  </div>
 </template>
