@@ -30,8 +30,8 @@ export default defineNuxtConfig({
   ],
   googleFonts: {
     families: {
-      Roboto: true,
-      Mulish: true,
+      Montserrat: true,
+      Merriweather: true,
     }
   },
   tailwindcss: {

@@ -10,26 +10,28 @@
       <div
         v-for="blogPost in blogPostList"
         :key="blogPost._path"
-        class="card article"
+        class="card article h-44"
       >
         <NuxtLink :to="blogPost._path">
           <div class="flex justify-center group-hover:cursor-pointer group">
             <div class="flex flex-col lg:flex-row rounded-lg bg-zinc-800/50 shadow-lg group-hover:bg-zinc-800">
-              <NuxtImg :src="blogPost.pic" alt="" class="w-full h-96 lg:h-auto object-cover lg:w-[200px] rounded-t-lg lg:rounded-none lg:rounded-l-lg" />
-              <div class="p-2">
-              <div class="flex flex-col gap-y-2">
-                <div class="group-hover:text-green-400">
-                  <div class="text-xl font-semibold">{{ blogPost.title }}</div>
-                </div>
-                <div class="flex gap-2">
-                  <BlogPostMeta
-                    :author="blogPost.author"
-                    :date="blogPost.dates.published"
-                  />
-                </div>
+              <div class="w-1/2">
+                <NuxtImg :src="blogPost.pic" alt="" class="w-52 h-44 object-cover rounded-t-lg lg:rounded-none lg:rounded-l-lg" />
               </div>
-              <p class="mt-3 text-gray-400"> {{ blogPost.description }}</p>
-            </div>
+              <div class="p-2">
+                <div class="flex flex-col gap-y-2">
+                  <div class="group-hover:text-green-400">
+                    <div class="text-xl font-semibold">{{ blogPost.title }}</div>
+                  </div>
+                  <div class="flex gap-2">
+                    <BlogPostMeta
+                      :author="blogPost.author"
+                      :date="blogPost.dates.published"
+                    />
+                  </div>
+                </div>
+                <p class="mt-3 text-white"> {{ blogPost.description }}</p>
+              </div>
             </div>
           </div>
         </NuxtLink>
