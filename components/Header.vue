@@ -1,18 +1,18 @@
 <template>
   <header class="sticky -mt-1 top-0 z-30 bg-zinc-900 transition-all duration-[0.4s] ease border-b border-gray-200/25">
-    <div class="mx-auto px-4 max-w-screen-lg relative items-center grid-cols-2 gap-3 sm:px-6 lg:px-3 lg:grid lg:h-20 lg:justify-center">
-      <NuxtLink to="/"  class="flex justify-center col-span-4 lg:col-span-1 lg:justify-start">
-      <div class="flex justify-center items-center space-x-1 bg-white rounded px-2 text-2xl">
-        <div class="stack" style="--stacks: 3;">
-          <span style="--index: 0;">FRAN</span>
-          <span style="--index: 1;">FRAN</span>
-          <span style="--index: 2;">FRAN</span>
+    <div class="mx-auto max-w-screen-lg relative items-center grid-cols-2 gap-3 px-3 grid h-20 justify-center">
+      <NuxtLink to="/"  class="flex justify-start mt-0 col-span-1 ">
+        <div class="flex justify-center items-center space-x-1 bg-white rounded px-2 text-2xl">
+          <div class="stack" style="--stacks: 3;">
+            <span style="--index: 0;">FRAN</span>
+            <span style="--index: 1;">FRAN</span>
+            <span style="--index: 2;">FRAN</span>
+          </div>
+          <Icon name="heroicons:code-bracket-solid" size="25" class="text-green-400"/> 
+          <span class="text-black">JS</span>
         </div>
-        <Icon name="heroicons:code-bracket-solid" size="25" class="text-green-400"/> 
-        <span class="text-black">JS</span>
-      </div>
       </NuxtLink>
-      <div class="flex justify-center mt-3 mb-2 lg:mt-0 lg:mb-0 lg:justify-end">
+      <div class="flex mt-3 mb-2 lg:mt-0 lg:mb-0 justify-end">
         <div class="flex flex-row space-x-8 mt-0 text-sm font-medium ">
           <Navigation />
         </div>
