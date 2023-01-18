@@ -1,7 +1,9 @@
 <template>
   <div class="flex flex-col">
-    <div class="w-full lg:max-w-3xl px-4 py-10 m-auto my-6 bg-zinc-800 sm:px-8 sm:shadow ring-1 ring-gray-800 sm:rounded-lg">
-      <main class="max-w-none base">
+    <div
+      class="m-auto my-6 w-full bg-zinc-800 px-4 py-10 ring-1 ring-gray-800 sm:rounded-lg sm:px-8 sm:shadow lg:max-w-3xl"
+    >
+      <main class="base max-w-none">
         <slot />
       </main>
     </div>

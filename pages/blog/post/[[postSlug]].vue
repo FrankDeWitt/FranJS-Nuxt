@@ -1,7 +1,7 @@
 <script setup lang="ts">
-  definePageMeta({
-    layout: "post"
-  })
+definePageMeta({
+  layout: 'post',
+})
 </script>
 
 <template>

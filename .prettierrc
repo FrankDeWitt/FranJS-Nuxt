@@ -1,0 +1,23 @@
+{
+  "useTabs": false,
+  "tailwindConfig": "./.nuxt/tailwind.config.cjs",
+  "trailingComma": "es5",
+  "semi": false,
+  "singleQuote": true,
+  "arrowParens": "avoid",
+  "printWidth": 120,
+  "plugins": [
+     "prettier-plugin-tailwindcss"
+  ],
+  "pluginSearchDirs": [
+    "."
+  ],
+  "overrides": [
+    {
+    "files": "*.svelte",
+      "options": {
+       "parser": "svelte"
+      }
+    }
+  ]
+}

@@ -4,20 +4,20 @@ export default defineNuxtConfig({
     head: {
       charset: 'utf-16',
       viewport: 'width=500, initial-scale=1',
-      title: "FranJS - My portfolio",
+      title: 'FranJS - My portfolio',
       meta: [
         // <meta name="description" content="My amazing portfolio">
-        { name: 'description', content: 'My amazing portfolio.' }
+        { name: 'description', content: 'My amazing portfolio.' },
       ],
     },
     pageTransition: {
       name: 'page',
-      mode: 'out-in' // default
+      mode: 'out-in', // default
     },
     layoutTransition: {
       name: 'slide-right',
-      mode: 'out-in' // default
-    }
+      mode: 'out-in', // default
+    },
   },
   modules: [
     '@nuxtjs/tailwindcss',
@@ -32,7 +32,7 @@ export default defineNuxtConfig({
     families: {
       Montserrat: true,
       Merriweather: true,
-    }
+    },
   },
   tailwindcss: {
     cssPath: '~/assets/css/tailwind.css',
@@ -46,8 +46,8 @@ export default defineNuxtConfig({
     highlight: {
       theme: {
         dark: 'github-dark',
-        default: 'github-light'
-      }
-    }
+        default: 'github-light',
+      },
+    },
   },
 })
