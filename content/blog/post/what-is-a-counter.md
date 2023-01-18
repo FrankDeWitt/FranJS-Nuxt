@@ -1,14 +1,18 @@
 ---
 title: What is a counter?
-description: "Este artículo trata sobre la reactividad en Vue.js, un framework de JavaScript para construir aplicaciones web interactivas. Se explica cómo funciona el sistema de reactividad basado en la observación de cambios en los datos."
-pic: "https://miro.medium.com/max/1000/1*qJppTMduXXhjgU2tZt9SfQ.png"
-author: "@Fran_J9"
+description: 'Este artículo trata sobre la reactividad en Vue.js, un framework de JavaScript para construir aplicaciones web interactivas. Se explica cómo funciona el sistema de reactividad basado en la observación de cambios en los datos.'
+pic: 'https://miro.medium.com/max/1000/1*qJppTMduXXhjgU2tZt9SfQ.png'
+author: '@Fran_J9'
+tags: ['vue']
 dates:
-  published: "2023-01-11"
+  published: '2023-01-11'
 ---
 
 <Counter></Counter>
+
 # What is a counter?
+
+[2023-01-11]{.text-green-500} - [Vue]{.rounded .bg-green-700 .text-white .px-2}
 
 Reactivity is an essential feature in modern web application development. It is a mechanism that allows developers to create applications that automatically react to changes in data, making the user interface more dynamic and fluid.
 
